@@ -1,0 +1,15 @@
+name: PasseJogo
+main: com.passe.PassePlugin
+version: 1.0.0
+description: Passe de recompensas por tempo de jogo
+commands:
+  passe:
+    description: Abre o passe de tempo de jogo
+    usage: /passe [resgatar]
+permissions:
+  passe.usar:
+    description: Permite usar o passe
+    default: true
+  passe.admin:
+    description: Comandos de administracao do passe
+    default: op

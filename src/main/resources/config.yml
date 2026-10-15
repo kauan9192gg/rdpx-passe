@@ -1,0 +1,125 @@
+# ============================================================
+#  PasseJogo - configuracao
+# ============================================================
+
+# Conta tempo so de quem esta ATIVO: andou, quebrou bloco, falou no chat
+# ou usou comando nos ultimos X minutos. 0 = conta tudo (inclusive AFK).
+afk-minutos: 5
+
+# Comando que o CONSOLE executa para cada tipo de recompensa.
+#   %player% = nick de quem ganhou     %valor% = quantidade
+comandos:
+  # >>> TROQUE pelo comando do plugin de cash do seu servidor <<<
+  cash: "points give %player% %valor%"
+  dinheiro: "eco give %player% %valor%"
+  chave-basica: "crazycrate give physical basica %valor% %player%"
+# "xp-pontos" e "xp-niveis" o proprio plugin entrega (nao precisa de comando).
+
+# Como cada recompensa aparece no menu.
+nomes:
+  cash: "&a%valor% Cash"
+  dinheiro: "&6$%valor%"
+  xp-pontos: "&b%valor% pontos de XP"
+  xp-niveis: "&b%valor% niveis de XP"
+  chave-basica: "&d%valor%x Chave Basica"
+
+# Niveis do passe. "minutos" = tempo de jogo TOTAL necessario.
+# Voce pode adicionar/remover niveis e usar qualquer tipo acima.
+# Para um comando solto, use "comandos-extra:" (lista) dentro do nivel.
+# (maximo de 45 niveis no menu)
+niveis:
+  1:
+    minutos: 10
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 50
+  2:
+    minutos: 20
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 100
+  3:
+    minutos: 30
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 150
+      chave-basica: 1
+  4:
+    minutos: 40
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 200
+  5:
+    minutos: 50
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 250
+  6:
+    minutos: 60
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 300
+      chave-basica: 1
+  7:
+    minutos: 70
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 350
+  8:
+    minutos: 80
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 400
+  9:
+    minutos: 90
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 450
+      chave-basica: 1
+  10:
+    minutos: 100
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 500
+  11:
+    minutos: 110
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 550
+  12:
+    minutos: 120
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 600
+      chave-basica: 1
+  13:
+    minutos: 130
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 650
+  14:
+    minutos: 140
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 700
+  15:
+    minutos: 150
+    recompensas:
+      cash: 1
+      dinheiro: 1000
+      xp-pontos: 750
+      chave-basica: 1
